@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RPS Duel - Rock Paper Scissors Game Website">
+    <title>RPS Duel</title>
+    <link rel="stylesheet" href="log-in-styles.css">
+</head>
+<body>
+    <header>
+        <navbar>
+            <h2 class="nav-logo">RPS Duel</h2>
+            <button id="guest-mode-btn">Guest Mode</button>
+        </navbar>
+    </header>
+    <main>
+        <form id="log-in-form">
+            <article>
+                <img src="assets/login-avatar.png" alt="log in avatar" id="log-in-avatar">
+                <label id="log-in-title">Login</label>
+                <p id="log-in-subtitle">Welcome Back! Please log in to your account</p>
+            </article>
+            <label class="input-label" for="username">Username: <input type="text" id="username" name="username" placeholder="Enter your username" required></label>
+        
+            <label class="input-label" for="password">Password: <input type="password" id="password" name="password" placeholder="Enter your password" required></label>
+        
+            <button type="submit" id="log-in-btn">Login</button>
+        
+            <p id="no-acc-description">No account yet? <a href="sign-up-form.html" id="create-acc-hyperlink">Create an account</a></p>
+        </form>
+    </main>
+        
+    <footer>
+        <p id="instructions">How to play: Choose Rock, Paper, or Scissors to compete against the computer!</p>
+        <div id="social-media-links">
+            <a href="" id="twitter-link"><img src="assets/twitter.png" alt="Twitter Icon" id="twitter-icon"></a>
+            <a href="" id="facebook-link"><img src="assets/facebook.png" alt="Facebook Icon" id="facebook-icon"></a>
+            <a href="" id="instagram-link"><img src="assets/instagram.png" alt="Instagram Icon" id="instagram-icon"></a>
+        </div>
+        <p id="copyright">© 2025 All rights reserved. Developed by Stephen William G. De Jesus.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="log-in-script.js"></script>
+</body>
+</html>
+
+

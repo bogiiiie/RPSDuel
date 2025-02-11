@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RPS Duel - Rock Paper Scissors Game Website">
+    <title>RPS Duel</title>
+    <link rel="stylesheet" href="game-area-styles.css">
+</head>
+<body>
+    <header>
+        <navbar>
+            <h2 class="nav-logo">RPS Duel</h2>
+            <button id="start-game-btn">Start Game</button>
+            <article id="current-user">
+                <div>
+                    <p id="current-username">Guest User</p>
+                    <p id="winnings">
+                        <span id="winnings-label">Winnings:</span>
+                        &nbsp;
+                        <span id="winnings-value">0</span>
+                    </p>
+                </div>
+                <img src="assets/profile-user.png" alt="profile icon" id="current-user-icon" height="32px">
+            </article>
+        </navbar>
+    </header>
+    <main>
+        <div id="game-result-container">
+            <img src="assets/winner.png" alt="trophy icon" id="result-icon">
+            <h3 id="result-title">You Win!</h3>
+            <p id="result-subtitle">Congratulations! You've won the game.</p>
+            <div id="game-result-btns">
+                <button id="play-again-btn">Play Again</button>
+            <button id="quit-game-btn">Quit Game</button>
+            </div>
+        </div>
+        <div id="leaderboards">
+            <h3>Leaderboards</h3>
+            <ol id="top-users">
+              <li>
+                <img src="assets/winner.png" alt="trophy" width="35px" height="35px">
+                <article>
+                    <span class="rank">Rank 1</span> 
+                    <span>
+                        <span class="username" id="rank1-username">User1</span> 
+                        <span class="dash">-</span>
+                        <span class="winnings">
+                            <span class="winnings-value">1000</span> 
+                            <span>win(s)</span>
+                        </span>
+                    </span>
+                </article>
+              </li>
+              <li>
+                <img src="assets/second-place-medal.png" alt="second place medal" width="35px" height="35px">
+                <article>
+                    <span class="rank">Rank 2</span> 
+                    <span>
+                        <span class="username">User2</span> 
+                        <span class="dash">-</span>
+                        <span class="winnings">
+                            <span class="winnings-value">1000</span> 
+                            <span>win(s)</span>
+                        </span>
+                    </span>
+                </article>
+              </li>
+              <li>
+                <img src="assets/third-place-medal.png" alt="third place medal" width="35px" height="35px">
+                <article>
+                    <span class="rank">Rank 3</span> 
+                    <span>
+                        <span class="username">User3</span> 
+                        <span class="dash">-</span>
+                        <span class="winnings">
+                            <span class="winnings-value">1000</span> 
+                            <span>win(s)</span>
+                        </span>
+                    </span>
+                </article>
+              </li>
+            </ol>
+          </div>
+        <div id="play-game-container">
+            <div id="title-container">
+                <h1 id="title">Choose Your Move!</h1>
+                <h3 id="subtitle">The First to Reach 3 Points Wins!</h3>
+            </div>
+            <div id="game-area">
+                <div id="player-container">
+                    <p class="label" id="player-label">You</p>
+                    <div class="weapon-div"><img src="assets/question-mark.png" alt="no-weapon" id="player-weapon" class="weapon-img"></div>
+                </div>
+                <h2 id="vs-label">VS</h2>
+                <div id="computer-container">
+                    <p class="label" id="computer-label">Computer</p>
+                    <div class="weapon-div"><img src="assets/question-mark.png" alt="no-weapon" id="computer-weapon" class="weapon-img"></div>
+                </div>
+            </div>
+            <h3 id="time-left"><span id="time-left-label">Time Left:</span> <span id="time-left-num">3</span></h3>
+            <div id="choices-container">
+                <button id="rock-btn" class="choices-btn"><img src="assets/rock.png" alt="Rock" width="40px"></button>
+                <button id="paper-btn" class="choices-btn"><img src="assets/paper.png" alt="Paper"></button>
+                <button id="scissors-btn" class="choices-btn"><img src="assets/scissors.png" alt="Scissors"></button>
+            </div>
+            <div id="scoreboard">
+                <div id="scoreboard-header">
+                    <h3 id="scoreboard-label">Scoreboard</h3>
+                    <button id="reset-btn"><img src="assets/reset.png" alt="Reset Icon" id="reset-icon"><span>Reset</span></button>
+                </div>
+                <h3 id="score">
+                    <span id="player-score" class="score-char">0</span>
+                    <span id="score-divider" class="score-char">-</span>
+                    <span id="computer-score" class="score-char">0</span>
+                </h3>
+            </div>
+        </div>
+    </main>
+        
+    <footer>
+        <p id="instructions">How to play: Choose Rock, Paper, or Scissors to compete against the computer!</p>
+        <div id="social-media-links">
+            <a href="" id="twitter-link"><img src="assets/twitter.png" alt="Twitter Icon" id="twitter-icon"></a>
+            <a href="" id="facebook-link"><img src="assets/facebook.png" alt="Facebook Icon" id="facebook-icon"></a>
+            <a href="" id="instagram-link"><img src="assets/instagram.png" alt="Instagram Icon" id="instagram-icon"></a>
+        </div>
+        <p id="copyright">© 2025 All rights reserved. Developed by Stephen William G. De Jesus.</p>
+    </footer>
+
+
+    <script src="game-area-script.js"></script>
+</body>
+</html>
